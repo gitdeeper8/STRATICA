@@ -12,6 +12,7 @@ build:
       - echo "🪨 Building STRATICA documentation"
       - git fetch --unshallow || true
     pre_build:
+      - pip install -e .
       - python scripts/generate_api_docs.py
 
 mkdocs:
