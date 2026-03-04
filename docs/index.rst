@@ -1,12 +1,13 @@
-STRATICA Documentation
-======================
+Welcome to STRATICA's documentation!
+====================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-Welcome to STRATICA's documentation!
-=====================================
+Indices and tables
+==================
 
-.. automodule:: stratica
-   :members:
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

@@ -1,32 +1,16 @@
 # .readthedocs.yaml
-# Read the Docs configuration file for STRATICA
-
 version: 2
 
 build:
   os: ubuntu-22.04
   tools:
     python: "3.10"
-  jobs:
-    post_checkout:
-      - echo "🪨 Building STRATICA documentation"
-      - git fetch --unshallow || true
-    pre_build:
-      - pip install -e .
-      - python scripts/generate_api_docs.py
-
-mkdocs:
-  configuration: mkdocs.yml
-  fail_on_warning: false
-
-formats:
-  - pdf
-  - epub
 
 python:
   install:
     - method: pip
       path: .
-      extra_requirements:
-        - docs
     - requirements: docs/requirements.txt
+
+sphinx:
+  configuration: docs/conf.py
