@@ -14,10 +14,7 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-
-markdown_extensions:
-  - admonition
-  - pymdownx.superfences
+  - Parameters: parameters.md
 
 plugins:
   - search
