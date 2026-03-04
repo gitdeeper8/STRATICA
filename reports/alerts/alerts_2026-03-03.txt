@@ -1,0 +1,25 @@
+============================================================
+STRATICA ACTIVE ALERTS - 2026-03-03
+============================================================
+
+🟡 [MEDIUM] Kerguelen Plateau
+   Type: Geochemical anomaly (Mo enrichment)
+   TCI: 0.68
+   Detected: 2026-03-03
+
+🟢 [LOW] ODP 1209B
+   Type: Magnetic reversal detected
+   TCI: 0.78
+   Detected: 2026-03-03
+
+🔴 [HIGH] Campbell Plateau
+   Type: Milankovitch cycle detected
+   TCI: 0.72
+   Detected: 2026-03-03
+
+🔴 [HIGH] Shatsky Rise
+   Type: Deposition rate anomaly
+   TCI: 0.78
+   Detected: 2026-03-03
+
+============================================================

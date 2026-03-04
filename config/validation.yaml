@@ -1,0 +1,81 @@
+# STRATICA Default Configuration
+version: 1.0.0
+environment: development
+
+core:
+  depth_resolution_cm: 1.0
+  age_model_type: 'auto'
+  min_tci_threshold: 0.62
+
+parameters:
+  LDR:
+    enabled: true
+    weight: 0.20
+    compaction_model: 'athy'
+  ISO:
+    enabled: true
+    weight: 0.15
+    proxy_types: ['delta18O', 'delta13C']
+  MFA:
+    enabled: true
+    weight: 0.12
+    classifier: 'cnn_v2'
+  MAG:
+    enabled: true
+    weight: 0.11
+    reversal_detection: true
+  GCH:
+    enabled: true
+    weight: 0.10
+    anomaly_threshold: 2.0
+  PYS:
+    enabled: true
+    weight: 0.09
+    diversity_index: 'shannon'
+  VSI:
+    enabled: true
+    weight: 0.08
+    min_varve_thickness: 0.2
+  TDM:
+    enabled: true
+    weight: 0.08
+    heat_flow_model: 'steady_state'
+  CEC:
+    enabled: true
+    weight: 0.07
+    frequencies: [100, 41, 21]
+
+models:
+  pinn:
+    architecture: 'transformer_lstm'
+    transformer_heads: 8
+    lstm_units: 256
+    constraint_weights:
+      stratigraphic: 1.5
+      thermodynamic: 1.2
+      orbital: 1.0
+  
+  transformer_lstm:
+    num_layers: 4
+    d_model: 512
+    nhead: 8
+    dropout: 0.1
+  
+  microfossil_cnn:
+    input_shape: [224, 224, 3]
+    num_classes: 150
+    confidence_threshold: 0.85
+
+processing:
+  interpolation_method: 'cubic'
+  max_gap_percent: 20
+  outlier_threshold: 3.0
+
+visualization:
+  theme: 'stratica_dark'
+  dpi: 300
+  save_format: 'png'
+
+logging:
+  level: INFO
+  file: 'logs/stratica.log'

@@ -1,0 +1,159 @@
+# ⚛️ SPIMAG .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+venv/
+ENV/
+env/
+venv.bak/
+pythonenv*
+*.egg-info/
+*.egg
+*.whl
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+*.vscode
+
+# Netlify
+.netlify
+.functions
+.netlify/
+
+# Tokens and secrets
+*_token.txt
+*.token
+*_key.json
+*.key
+*.pem
+*.secret
+secrets/
+credentials/
+*.env
+.env.*
+!.env.example
+
+# Local configuration
+config/local.yaml
+config/local.yml
+config/local.json
+*.local
+local/
+
+# Logs
+logs/
+*.log
+log.txt
+error.log
+access.log
+
+# Data files (large)
+data/raw/
+data/processed/
+data/external/
+data/interim/
+*.csv
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.feather
+*.pkl
+*.pickle
+
+# Quantum chemistry outputs
+*.log
+*.out
+*.chk
+*.gbw
+*.hess
+*.molden
+*.cube
+
+# Model files (large)
+models/*.h5
+models/*.pkl
+models/*.joblib
+models/*.pt
+models/*.pth
+models/*.onnx
+!models/example_*
+
+# Test outputs
+tests/outputs/
+tests/results/
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+*.py,cover
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# Documentation builds
+site/
+docs/build/
+docs/_build/
+docs/site/
+_build/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+Dockerfile.*
+*.docker
+
+# Backup files
+*.bak
+*.backup
+backups/
+*.old
+
+# OS specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Exclude sensitive scripts
+upload_spimag.py
+!upload_spimag.py.template
+deploy_keys/
+*.pem
+*.key
+
+# ⚛️ SPIMAG - Inside the eye of a migrating robin, two electrons are entangled.

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use STRATICA in your research, please cite it as below."
+title: "STRATICA: Stratigraphic Pattern Recognition & Paleoclimatic Temporal Reconstruction"
+version: 1.0.0
+doi: 10.5281/zenodo.18851076
+date-released: 2026-03-01
+url: "https://stratica.netlify.app"
+authors:
+  - family-names: "Baladi"
+    given-names: "Samir"
+    email: "gitdeeper@gmail.com"
+    orcid: "https://orcid.org/0009-0003-8903-0029"
+    affiliation: "Ronin Institute / Rite of Renaissance"
+repository-code: "https://gitlab.com/gitdeeper8/STRATICA"
+license: "MIT"
+keywords:
+  - "stratigraphy"
+  - "paleoclimatology"
+  - "physics-informed neural networks"
+  - "milankovitch cycles"
+  - "deep-time reconstruction"
+  - "tci index"

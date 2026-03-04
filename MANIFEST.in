@@ -1,0 +1,19 @@
+include LICENSE
+include README.md
+include requirements.txt
+include pyproject.toml
+include setup.cfg
+include .pre-commit-config.yaml
+include .env.example
+recursive-include stratica *.py
+recursive-include scripts *.py
+recursive-include config *.yaml *.yml
+recursive-include docs *
+prune docs/build
+prune tests
+prune .github
+prune .gitlab
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude .coverage
+global-exclude .*
