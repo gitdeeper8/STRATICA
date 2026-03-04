@@ -13,7 +13,6 @@ build:
       - git fetch --unshallow || true
     pre_build:
       - python scripts/generate_api_docs.py
-      - python scripts/validate_parameters.py --docs
 
 mkdocs:
   configuration: mkdocs.yml
@@ -30,18 +29,3 @@ python:
       extra_requirements:
         - docs
     - requirements: docs/requirements.txt
-
-env:
-  STRATICA_VERSION: 1.0.0
-  TCI_DOCS_MODE: production
-  DISPLAY_CLASSIFICATION_ACCURACY: "96.2"
-  DISPLAY_CYCLE_PRECISION: "1200"
-
-search:
-  ranking:
-    api/*: 3
-    parameters/*: 5
-    case_studies/*: 4
-    parameters/ldr/: 10
-    parameters/iso/: 10
-    case_studies/petm/: 8

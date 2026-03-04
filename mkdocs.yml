@@ -3,61 +3,63 @@ site_description: Stratigraphic Pattern Recognition & Paleoclimatic Temporal Rec
 site_author: Samir Baladi
 site_url: https://stratica.readthedocs.io
 
-repo_url: https://gitlab.com/gitdeeper8/STRATICA
+repo_url: https://github.com/gitdeeper8/STRATICA
 repo_name: gitdeeper8/STRATICA
 edit_uri: edit/main/docs/
 
 theme:
   name: material
   palette:
-    primary: teal
-    accent: deep orange
-  logo: assets/logo.png
-  favicon: assets/favicon.ico
+    - scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
     - search.highlight
     - content.code.copy
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
 
 nav:
   - Home: index.md
-  - Framework:
-      - Overview: framework/overview.md
-      - TCI Index: framework/tci.md
-      - Nine Parameters: framework/parameters.md
-      - TL-PINN Architecture: framework/tl-pinn.md
+  - Getting Started: getting-started.md
+  - TCI Framework:
+    - Overview: framework/overview.md
+    - Nine Parameters: framework/parameters.md
+    - TL-PINN: framework/tl-pinn.md
   - Parameters:
-      - LDR (20%): parameters/ldr.md
-      - ISO (15%): parameters/iso.md
-      - MFA (12%): parameters/mfa.md
-      - MAG (11%): parameters/mag.md
-      - GCH (10%): parameters/gch.md
-      - PYS (9%): parameters/pys.md
-      - VSI (8%): parameters/vsi.md
-      - TDM (8%): parameters/tdm.md
-      - CEC (7%): parameters/cec.md
+    - LDR (20%): parameters/ldr.md
+    - ISO (15%): parameters/iso.md
+    - MFA (12%): parameters/mfa.md
+    - MAG (11%): parameters/mag.md
+    - GCH (10%): parameters/gch.md
+    - PYS (9%): parameters/pys.md
+    - VSI (8%): parameters/vsi.md
+    - TDM (8%): parameters/tdm.md
+    - CEC (7%): parameters/cec.md
   - Case Studies:
-      - PETM at ODP 1209B: case_studies/petm.md
-      - Pleistocene Transitions: case_studies/pleistocene.md
-      - Cretaceous OAEs: case_studies/cretaceous.md
-      - Eocene-Oligocene Transition: case_studies/eocene-oligocene.md
-      - End-Permian Extinction: case_studies/permian.md
-  - Validation:
-      - Basin Coverage: validation/basins.md
-      - Results: validation/results.md
-      - Benchmarks: validation/benchmarks.md
+    - PETM at ODP 1209B: case-studies/petm.md
+    - Mass Extinctions: case-studies/extinctions.md
   - API Reference:
-      - Core: api/core.md
-      - Parameters: api/parameters.md
-      - TL-PINN: api/tl-pinn.md
-      - Back-casting: api/backcast.md
+    - Core: api/core.md
+    - Parameters: api/parameters.md
+    - Models: api/models.md
+    - Physics: api/physics.md
   - Tutorials:
-      - Quick Start: tutorials/quickstart.md
-      - Basin Analysis: tutorials/basin.md
-      - Isotope Back-casting: tutorials/isotope.md
-      - Cycle Detection: tutorials/cycles.md
+    - Basic Analysis: tutorials/basic.md
+    - Back-casting: tutorials/backcast.md
+    - Dashboard: tutorials/dashboard.md
   - Contributing: contributing.md
   - Changelog: changelog.md
 
@@ -69,8 +71,6 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.arithmatex:
       generic: true
   - footnotes
@@ -87,15 +87,14 @@ extra_css:
 
 extra:
   social:
-    - icon: fontawesome/brands/gitlab
-      link: https://gitlab.com/gitdeeper8/STRATICA
     - icon: fontawesome/brands/github
       link: https://github.com/gitdeeper8/STRATICA
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/gitdeeper8/STRATICA
     - icon: fontawesome/solid/globe
       link: https://stratica.netlify.app
   version:
     provider: mike
-    default: latest
 
 plugins:
   - search
