@@ -1,23 +1,24 @@
-# STRATICA Documentation
+# STRATICA
+
+**Stratigraphic Pattern Recognition & Paleoclimatic Temporal Reconstruction**
 
 Welcome to the STRATICA documentation!
 
 ## Quick Links
-- [Installation](installation.md)
-- [Quick Start](quickstart.md)
-- [API Reference](api_reference.md)
-- [Methodology](methodology.md)
 
-## Parameters
-- [LDR - Lithological Deposition Rate](parameters/lithological.md)
-- [ISO - Stable Isotope Fractionation](parameters/isotope.md)
-- [MFA - Micro-Fossil Assemblage](parameters/microfossil.md)
-- [MAG - Magnetic Susceptibility](parameters/magnetic.md)
-- [GCH - Geochemical Anomaly Index](parameters/geochemistry.md)
-- [PYS - Palynological Yield Score](parameters/palynology.md)
-- [VSI - Varve Sedimentary Integrity](parameters/varves.md)
-- [TDM - Thermal Diffusion Model](parameters/thermal.md)
-- [CEC - Cyclostratigraphic Energy Cycle](parameters/cyclostratigraphy.md)
+- [GitHub Repository](https://github.com/gitdeeper8/STRATICA)
+- [PyPI Package](https://pypi.org/project/stratica)
+- [Live Dashboard](https://stratica.netlify.app)
 
-## Case Studies
-- [PETM at ODP Site 1209B](case_studies/petm_odp1209b.md)
+## Installation
+
+```bash
+pip install stratica
+```
+
+Features
+
+· 96.2% TCI classification accuracy
+· 47 sedimentary basins across 6 continents
+· 9 integrated parameters
+· Physics-Informed Neural Networks
