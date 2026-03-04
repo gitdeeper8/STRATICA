@@ -8,7 +8,7 @@ A Physics-Informed AI Framework for Deep-Time Earth System Reconstruction, Strat
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18851076.svg)](https://doi.org/10.5281/zenodo.18851076)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
-[![PyPI version](https://badge.fury.io/py/stratica.svg)](https://pypi.org/project/stratica/)
+[![![PyPI version](https://img.shields.io/pypi/v/stratica)](https://badge.fury.io/py/stratica.svg)](https://pypi.org/project/stratica/)
 
 ## Overview
 
